@@ -57,7 +57,7 @@
       <!--Main section-->
       <section class="overlay">
         <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="button">Заказать услугу</button>
+        <button type="button" class="button" data-modal-open>Заказать услугу</button>
       </section>
       <!--Features-->
       <section class="features section">
@@ -97,9 +97,16 @@
           <ul class="works-section list">
             <li class="works-img">
               <img src="./images/box-1.jpg" alt="keyboard" width="370" />
+              <p class="works-img-descr">Десктопные приложения</p>
             </li>
-            <li class="works-img"><img src="./images/box-2.jpg" alt="phone" width="370" /></li>
-            <li class="works-img"><img src="./images/box-3.jpg" alt="tablet" width="370" /></li>
+            <li class="works-img">
+              <img src="./images/box-2.jpg" alt="phone" width="370" />
+              <p class="works-img-descr">Мобильные приложения</p>
+            </li>
+            <li class="works-img">
+              <img src="./images/box-3.jpg" alt="tablet" width="370" />
+              <p class="works-img-descr">Дизайнерские решения</p>
+            </li>
           </ul>
         </div>
       </section>
@@ -354,5 +361,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-modal" data-modal-close>
+          <svg class="modal-cross">
+            <use href="./images/portfolio/icons/cross.svg#cross"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
